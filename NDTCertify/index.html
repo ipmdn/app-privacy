@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDTCertify — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1c1c1e; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 40px; border-bottom: 1px solid #e5e5ea; padding-bottom: 8px; }
+  .updated { color: #6e6e73; font-size: 14px; margin-bottom: 32px; }
+  ul { padding-left: 20px; }
+  code { background: #f2f2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  .callout { background: #f2f2f7; border-radius: 10px; padding: 16px 20px; margin: 20px 0; }
+</style>
+</head>
+<body>
+
+<h1>NDTCertify — Privacy Policy</h1>
+<p class="updated">Last updated: September 17, 2026</p>
+
+<div class="callout">
+<strong>In short:</strong> NDTCertify is a local-first app. Your certificate data, photos, and master data
+are stored on your device and, if you choose to enable it, in your own iCloud account. We do not operate
+a server that receives or stores your data, and we do not use analytics or advertising trackers of any kind.
+</div>
+
+<h2>Who we are</h2>
+<p>
+NDTCertify is developed by Matteo Del Negro. For any privacy question,
+contact us at ipmdn@icloud.com.
+</p>
+
+<h2>Data storage and where it lives</h2>
+<ul>
+  <li><strong>On-device database.</strong> All certificates, inspection records, photos, and master data
+      (customers, operators, equipment, standard methods, production orders, etc.) are stored in a local
+      database on your iPad. We never receive a copy of this data.</li>
+  <li><strong>Optional iCloud backup.</strong> If you enable "iCloud Backup" in Settings, your local database
+      and photo attachments are copied into your personal iCloud Drive container, using Apple's iCloud
+      infrastructure and your own Apple ID. This is single-user, single-device-at-a-time file storage — we
+      have no access to this data; it is encrypted and managed entirely by Apple under your Apple ID.</li>
+</ul>
+
+<h2>Face ID / Touch ID</h2>
+<p>
+NDTCertify uses Face ID or Touch ID, when available, to confirm you are the device owner before two
+specific irreversible actions:
+</p>
+<ul>
+  <li>Erasing the local database.</li>
+  <li>Transferring database ownership when this database was last used on another device.</li>
+</ul>
+<p>
+Biometric authentication is handled entirely by iOS on your device (via Apple's LocalAuthentication
+framework). NDTCertify never receives, stores, or transmits your biometric data — the app only receives a
+yes/no confirmation from the operating system.
+</p>
+
+<h2>Camera and Photo Library</h2>
+<p>
+NDTCertify requests camera access to let inspectors attach photographic evidence to a certificate directly
+from an inspection. Photo library access is requested only as a fallback when a camera is unavailable on
+the device. Photos you capture or attach are stored in the app's local (and optionally iCloud) database
+described above — they are not uploaded anywhere else.
+</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not run analytics, crash reporting, or advertising SDKs.</li>
+  <li>We do not track you across apps or websites.</li>
+  <li>We do not sell or share your data with third parties.</li>
+  <li>We do not operate a server that stores your certificates or inspection data in this version of the app.</li>
+</ul>
+
+<h2>Required-reason API usage</h2>
+<p>
+As disclosed in the app's privacy manifest, NDTCertify uses two categories of iOS "required reason" APIs
+strictly for on-device functionality:
+</p>
+<ul>
+  <li><code>UserDefaults</code> — to store your own app preferences (e.g. connection mode, PDF export
+      folder settings) locally on your device. This data is never read by, or shared with, any other app.</li>
+  <li><strong>File timestamps</strong> — to show you when your iCloud backup last synced, and to detect
+      whether an iCloud file has finished downloading to your device.</li>
+</ul>
+
+<h2>Future cloud sync (Supabase)</h2>
+<p>
+A future version of this app may offer an optional multi-device/multi-user sync mode. That capability is
+not enabled in this version of the app. This policy will be updated, and you will be asked for consent,
+before any such feature collects or transmits your data to a server.
+</p>
+
+<h2>Children's privacy</h2>
+<p>
+NDTCertify is a professional tool for certified NDT (Non-Destructive Testing) inspectors and is not
+directed at children.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+If this policy changes, we will update the "Last updated" date above and, for material changes, make
+that clear the next time you open the app.
+</p>
+
+<h2>Contact</h2>
+<p>
+Questions about this policy or your data: ipmdn@icloud.com.
+</p>
+
+</body>
+</html>
